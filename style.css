@@ -160,3 +160,80 @@ footer {
     width: 100%;
     margin-top: 4rem;
 }
+/* ==========================================================================
+   BOTÃO DE TEMA
+   ========================================================================== */
+
+.tema-btn {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
+
+    background-color: white;
+    color: #1b4332;
+
+    border: 2px solid #1b4332;
+    border-radius: 8px;
+
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.tema-btn:hover {
+    transform: scale(1.05);
+}
+
+/* ==========================================================================
+   MODO ESCURO
+   ========================================================================== */
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode section {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+body.dark-mode h2 {
+    color: #95d5b2;
+}
+
+body.dark-mode .card {
+    background-color: #2a2a2a;
+}
+
+body.dark-mode .card h3 {
+    color: #95d5b2;
+}
+
+body.dark-mode .box-interativa {
+    background-color: #223328;
+}
+
+body.dark-mode input {
+    background-color: #2a2a2a;
+    color: white;
+    border: 1px solid #555;
+}
+
+body.dark-mode footer {
+    background-color: #000;
+}
+
+body.dark-mode #resultado-simulacao {
+    background-color: #2a2a2a !important;
+    color: white;
+}
+
+body.dark-mode .tema-btn {
+    background-color: #333;
+    color: white;
+    border-color: white;
+}
