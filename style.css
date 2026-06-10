@@ -1,0 +1,162 @@
+/* ==========================================================================
+   ESTILOS GERAIS
+   ========================================================================== */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f7f4;
+    color: #2d3748;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   TOPO DA PÁGINA (HEADER)
+   ========================================================================== */
+header {
+    background: linear-gradient(135deg, #1b4332, #2d6a4f);
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-top: 0.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ==========================================================================
+   CONTEÚDO PRINCIPAL (MAIN & SECTIONS)
+   ========================================================================== */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    padding-bottom: 5rem;
+}
+
+section {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #1b4332;
+    border-bottom: 3px solid #95d5b2;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+/* ==========================================================================
+   GRID E CARDS (SISTEMA EM CAMADAS)
+   ========================================================================== */
+.grid-beneficios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.card {
+    background-color: #f8fbf9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-top: 4px solid #52b788;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #1b4332;
+    font-size: 1.3rem;
+}
+
+/* ==========================================================================
+   LISTA DE IMPACTOS
+   ========================================================================== */
+.lista-impactos {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-impactos li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.lista-impactos li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #2d6a4f;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* ==========================================================================
+   CAIXA INTERATIVA E BOTÃO
+   ========================================================================== */
+.box-interativa {
+    background-color: #e9f5ed;
+    border-left: 6px solid #2d6a4f;
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin-top: 1.5rem;
+}
+
+.btn-acao {
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-acao:hover {
+    background-color: #1b4332;
+}
+
+/* ==========================================================================
+   RODAPÉ (FOOTER)
+   ========================================================================== */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #1b4332;
+    color: white;
+    font-size: 0.9rem;
+    width: 100%;
+    margin-top: 4rem;
+}
